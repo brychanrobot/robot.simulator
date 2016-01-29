@@ -1,0 +1,844 @@
+﻿[2016.01.29-22.42.50:512][  0]Log file open, 01/29/16 15:42:50
+[2016.01.29-22.42.50:512][  0]LogInit:Display: Running engine for game: UavSimulator
+[2016.01.29-22.42.50:512][  0]LogPlatformFile: Not using cached read wrapper
+[2016.01.29-22.42.50:512][  0]LogInit:Display: RandInit(-1542185745) SRandInit(-1542185744).
+[2016.01.29-22.42.50:512][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+[2016.01.29-22.42.50:512][  0]LogStats: Stats thread started at 0.118047
+[2016.01.29-22.42.50:512][  0]LogInit: Version: 4.10.2-2818068+++depot+UE4-Releases+4.10
+[2016.01.29-22.42.50:512][  0]LogInit: API Version: 2758231
+[2016.01.29-22.42.50:512][  0]LogInit: Compiled (64-bit): Jan  6 2016 17:36:42
+[2016.01.29-22.42.50:512][  0]LogInit: Compiled with Visual C++: 19.00.23026.00
+[2016.01.29-22.42.50:512][  0]LogInit: Build Configuration: Development
+[2016.01.29-22.42.50:512][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
+[2016.01.29-22.42.50:512][  0]LogInit: Command line:  
+[2016.01.29-22.42.50:512][  0]LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.10/Engine/Binaries/Win64/
+[2016.01.29-22.42.50:512][  0]LogInit: Rocket: 1
+[2016.01.29-22.42.50:528][  0]LogInit: Using libcurl 7.41.0
+[2016.01.29-22.42.50:528][  0]LogInit:  - built for x86_64-pc-win32
+[2016.01.29-22.42.50:528][  0]LogInit:  - supports SSL with WinSSL
+[2016.01.29-22.42.50:528][  0]LogInit:  - other features:
+[2016.01.29-22.42.50:528][  0]LogInit:      CURL_VERSION_SSL
+[2016.01.29-22.42.50:528][  0]LogInit:      CURL_VERSION_IPV6
+[2016.01.29-22.42.50:528][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2016.01.29-22.42.50:528][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2016.01.29-22.42.50:528][  0]LogInit:      CURL_VERSION_IDN
+[2016.01.29-22.42.50:528][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2016.01.29-22.42.50:528][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2016.01.29-22.42.50:528][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2016.01.29-22.42.50:528][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2016.01.29-22.42.50:528][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+[2016.01.29-22.42.50:555][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2016.01.29-22.42.50:560][  0]LogInit: Object subsystem initialized
+[2016.01.29-22.42.50:561][  0]LogInit: Selected Device Profile: [Windows]
+[2016.01.29-22.42.50:561][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.01.29-22.42.50:576][  0]LogInit: Computer: THEHOOD
+[2016.01.29-22.42.50:576][  0]LogInit: User: BryantChandler
+[2016.01.29-22.42.50:576][  0]LogInit: CPU Page size=4096, Cores=4
+[2016.01.29-22.42.50:576][  0]LogInit: High frequency timer resolution =3.328122 MHz
+[2016.01.29-22.42.50:576][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2016.01.29-22.42.50:576][  0]LogMemory: Platform Memory Stats for Windows
+[2016.01.29-22.42.50:576][  0]LogMemory: Process Physical Memory: 57.68 MB used, 57.68 MB peak
+[2016.01.29-22.42.50:576][  0]LogMemory: Process Virtual Memory: 58.78 MB used, 58.78 MB peak
+[2016.01.29-22.42.50:576][  0]LogMemory: Physical Memory: 7428.48 MB used, 16287.96 MB total
+[2016.01.29-22.42.50:576][  0]LogMemory: Virtual Memory: 385.17 MB used, 134217728.00 MB total
+[2016.01.29-22.42.50:724][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.01.29-22.42.51:148][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 960 (Feature Level 11_0)
+[2016.01.29-22.42.51:148][  0]LogD3D11RHI: Adapter has 1969MB of dedicated video memory, 0MB of dedicated system memory, and 8143MB of shared system memory, 2 output[s]
+[2016.01.29-22.42.51:153][  0]LogD3D11RHI: Found D3D11 adapter 1: Intel(R) HD Graphics 530 (Feature Level 11_0)
+[2016.01.29-22.42.51:153][  0]LogD3D11RHI: Adapter has 128MB of dedicated video memory, 0MB of dedicated system memory, and 8143MB of shared system memory, 1 output[s]
+[2016.01.29-22.42.51:154][  0]LogD3D11RHI: Found D3D11 adapter 2: Microsoft Basic Render Driver (Feature Level 11_0)
+[2016.01.29-22.42.51:154][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 8143MB of shared system memory, 0 output[s]
+[2016.01.29-22.42.51:154][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2016.01.29-22.42.51:159][  0]LogD3D11RHI: !Direct3DDevice
+[2016.01.29-22.42.51:159][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.01.29-22.42.51:172][  0]LogD3D11RHI: Async texture creation enabled
+[2016.01.29-22.42.51:181][  0]LogShaderCompilers: Guid format shader working directory is -30 characters bigger than the processId version (../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Intermediate/Shaders/WorkingDirectory/16328/).
+[2016.01.29-22.42.51:182][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/BRYANT~1/AppData/Local/Temp/UnrealShaderWorkingDir/F993550C400DC18B16034DA27E423C6A/'.
+[2016.01.29-22.42.51:182][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.01.29-22.42.52:508][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.01.29-22.42.52:512][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.01.29-22.42.52:516][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.01.29-22.42.52:520][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.01.29-22.42.52:524][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.01.29-22.42.52:528][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.01.29-22.42.52:530][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.01.29-22.42.52:533][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.01.29-22.42.52:536][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.01.29-22.42.52:540][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.01.29-22.42.52:543][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.01.29-22.42.52:550][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.01.29-22.42.52:550][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.01.29-22.42.52:551][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.01.29-22.42.52:590][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.01.29-22.42.52:594][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.01.29-22.42.52:597][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.01.29-22.42.52:601][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.01.29-22.42.52:601][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.01.29-22.42.52:856][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.01.29-22.42.52:972][  0]LogDerivedDataCache: Loaded boot cache 0.12s 41MB C:/Users/Bryant Chandler/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
+[2016.01.29-22.42.52:972][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Bryant Chandler/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc
+[2016.01.29-22.42.52:972][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.01.29-22.42.52:972][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.01.29-22.42.52:972][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.01.29-22.42.52:972][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.01.29-22.42.53:032][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.01.29-22.42.53:043][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Bryant Chandler/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.01.29-22.42.55:948][  0]LogInit: Selected Device Profile: [Windows]
+[2016.01.29-22.42.55:959][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2016.01.29-22.42.56:186][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.01.29-22.42.56:186][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.01.29-22.42.56:748][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.01.29-22.42.58:701][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.01.29-22.42.58:848][  0]LogAssetRegistry: FAssetRegistry took 0.0126 seconds to start up
+[2016.01.29-22.42.59:166][  0]SourceControl: Info Source control is disabled
+[2016.01.29-22.42.59:208][  0]SourceControl: Info Source control is disabled
+[2016.01.29-22.42.59:223][  0]SourceControl: Info Source control is disabled
+[2016.01.29-22.42.59:234][  0]SourceControl: Info Source control is disabled
+[2016.01.29-22.42.59:531][  0]LogObj: 28633 objects as part of root set at end of initial load.
+[2016.01.29-22.42.59:531][  0]LogUObjectAllocator: 6099744 out of 0 bytes used by permanent object pool.
+[2016.01.29-22.42.59:635][  0]LogEngine: Initializing Engine...
+[2016.01.29-22.42.59:639][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.01.29-22.42.59:648][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.01.29-22.42.59:861][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.01.29-22.42.59:879][  0]LogInit: XAudio2 using 'Speakers / Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.01.29-22.42.59:893][  0]LogInit: FAudioDevice initialized.
+[2016.01.29-22.42.59:911][  0]LogDerivedDataCache: Saved boot cache 0.02s 41MB C:/Users/Bryant Chandler/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
+[2016.01.29-22.42.59:915][  0]LogInit: Texture streaming: Enabled
+[2016.01.29-22.42.59:924][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2016.01.29-22.42.59:924][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.10.2-2818068+++depot+UE4-Releases+4.10
+[2016.01.29-22.42.59:924][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId 895765324b68d14a12599b86d9c5911a|e63c654d70c647ba9209f847103cac21|b9a6e8ac-7d52-4db6-b9ca-097e0b71ee03
+[2016.01.29-22.42.59:925][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
+[2016.01.29-22.42.59:939][  0]LogInit: Transaction tracking system initialized
+[2016.01.29-22.43.00:016][  0]BlueprintLog: New page: Editor Load
+[2016.01.29-22.43.00:244][  0]LocalizationService: Info Localization service is disabled
+[2016.01.29-22.43.00:651][  0]LogConsoleResponse:Display: 
+[2016.01.29-22.43.00:873][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.01.29-22.43.00:981][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/' took 0.02s
+[2016.01.29-22.43.00:981][  0]SourceControl: Info Source control is disabled
+[2016.01.29-22.43.00:983][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/FlyingBP/Maps/FlyingExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.01.29-22.43.00:987][  0]LightingResults: New page: Lighting Build
+[2016.01.29-22.43.00:995][  0]MapCheck: New page: Map Check
+[2016.01.29-22.43.00:995][  0]LightingResults: New page: Lighting Build
+[2016.01.29-22.43.01:012][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020EA3C13B00
+[2016.01.29-22.43.01:573][  0]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2016.01.29-22.43.01:600][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.01.29-22.43.01:602][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.01.29-22.43.01:634][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 31.57ms to complete.
+[2016.01.29-22.43.01:634][  0]LogFileHelpers: Loading map 'FlyingExampleMap' took 0.652
+[2016.01.29-22.43.01:817][  0]LogCollectionManager: Loaded 0 collections in 0.002031 seconds
+[2016.01.29-22.43.01:882][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/Collections/' took 0.01s
+[2016.01.29-22.43.01:882][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Developers/BryantChandler/Collections/' took 0.01s
+[2016.01.29-22.43.01:882][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Collections/' took 0.01s
+[2016.01.29-22.43.01:882][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2016.01.29-22.43.01:892][  0]LogContentBrowser: Native class hierarchy populated in 0.0087 seconds. Added 1893 classes and 338 folders.
+[2016.01.29-22.43.01:904][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2016.01.29-22.43.02:085][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2016.01.29-22.43.02:095][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2016.01.29-22.43.02:235][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.01.29-22.43.02:248][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.01.29-22.43.02:275][  0]LogLoad: Full Startup: 12.48 seconds (BP compile: 0.11 seconds)
+[2016.01.29-22.43.02:619][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.01.29-22.43.02:704][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.01.29-22.43.02:843][  0]LogRenderer: Reallocating scene render targets to support 1276x676 (Frame:2).
+[2016.01.29-22.43.03:950][  4]LogAssetRegistry: Asset discovery search completed in 5.1136 seconds
+[2016.01.29-22.43.03:950][  4]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2016.01.29-22.43.03:950][  4]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000021 seconds (updated 0 objects)
+[2016.01.29-22.44.59:302][952]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-22.44.59:302][952]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.01.29-22.44.59:303][952]PIE: New page: PIE session: FlyingExampleMap (Jan 29, 2016, 8:44:59 AM)
+[2016.01.29-22.44.59:304][952]LogPlayLevel: Creating play world package: /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap
+[2016.01.29-22.44.59:346][952]LogPlayLevel: PIE: StaticDuplicateObject took: (0.042099s)
+[2016.01.29-22.44.59:347][952]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2016.01.29-22.44.59:347][952]LogPlayLevel: PIE: World Init took: (0.001043s)
+[2016.01.29-22.44.59:348][952]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.043843s)
+[2016.01.29-22.44.59:381][952]LogInit: XAudio2 using 'Speakers / Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.01.29-22.44.59:390][952]LogInit: FAudioDevice initialized.
+[2016.01.29-22.44.59:442][952]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.01.29-22.44.59:459][952]LogWorld: Bringing World /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 0) at 2016.01.29-15.44.59
+[2016.01.29-22.44.59:460][952]LogActor:Warning: GameSession /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap:PersistentLevel.GameSession_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.01.29-22.44.59:461][952]LogActor:Warning: GameNetworkManager /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap:PersistentLevel.GameNetworkManager_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.01.29-22.44.59:463][952]LogWorld: Bringing up level for play took: 0.014163
+[2016.01.29-22.44.59:479][952]PIE: Info Play in editor start time for /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap -0.66
+[2016.01.29-22.44.59:479][952]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-22.45.10:187][229]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-22.45.10:227][229]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-22.45.10:242][229]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020EB1DDA3E0
+[2016.01.29-22.45.15:072][671]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-22.45.15:212][671]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-22.45.15:217][671]LogMaterial: 0.000325 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.01.29-22.45.15:244][671]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2016.01.29-22.45.15:410][671]LogRenderer: Reallocating scene render targets to support 1276x896 (Frame:8000).
+[2016.01.29-22.45.16:447][748]MaterialEditorStats: Info Base pass shader with static lighting: 64 instructions
+[2016.01.29-22.45.16:448][748]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 32 instructions
+[2016.01.29-22.45.16:448][748]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2016.01.29-22.45.16:448][748]MaterialEditorStats: Info Texture samplers: 3/16
+[2016.01.29-22.45.26:608][757]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-22.45.26:619][757]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-22.45.26:624][757]LogMaterial: 0.000092 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.01.29-22.45.27:428][825]MaterialEditorStats: Info Base pass shader with static lighting: 64 instructions
+[2016.01.29-22.45.27:428][825]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 32 instructions
+[2016.01.29-22.45.27:428][825]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2016.01.29-22.45.27:428][825]MaterialEditorStats: Info Texture samplers: 3/16
+[2016.01.29-22.45.33:787][408]LogMaterialEditor: Saving and Compiling material fov_Mat
+[2016.01.29-22.45.34:074][408]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-22.45.34:082][408]LogMaterial: 0.000098 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.01.29-22.45.34:123][408]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-22.45.34:148][408]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-22.45.34:155][408]LogMaterial: 0.001008 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.01.29-22.45.35:907][408]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Images/fov_Mat" FILE="../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov_Mat.uasset" SILENT=true
+[2016.01.29-22.45.35:935][408]LogSavePackage: Save=19.100262ms
+[2016.01.29-22.45.35:935][408]LogSavePackage: Moving '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/fov_Mat274A473C4EB7C4EBEA230C871573696F.tmp' to '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov_Mat.uasset'
+[2016.01.29-22.45.35:939][408]LogSavePackage: Total save time: 31.355217ms
+[2016.01.29-22.45.35:939][408]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov_Mat.uasset
+[2016.01.29-22.45.35:945][408]MaterialEditorStats: Info Base pass shader with static lighting: 93 instructions
+[2016.01.29-22.45.35:945][408]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 61 instructions
+[2016.01.29-22.45.35:945][408]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2016.01.29-22.45.35:945][408]MaterialEditorStats: Info Texture samplers: 4/16
+[2016.01.29-22.46.56:358][266]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Ground_5)
+[2016.01.29-22.47.05:117][216]LogEditorViewport: Clicking on Actor (LMB): DecalActor (DecalActor)
+[2016.01.29-22.47.06:519][368]Cmd: DELETE
+[2016.01.29-22.47.06:519][368]Cmd: ACTOR DELETE
+[2016.01.29-22.47.06:529][368]LogEditorActor: Deleted Actor: DecalActor
+[2016.01.29-22.47.06:540][368]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020E93A31120
+[2016.01.29-22.47.06:542][368]LogEditorActor: Deleted 1 Actors (0.018 secs)
+[2016.01.29-22.47.16:174][413]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2016.01.29-22.47.16:230][413]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2016.01.29-22.47.16:234][413]LogMaterial: 0.000069 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.01.29-22.47.16:260][413]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2016.01.29-22.47.17:195][481]MaterialEditorStats: Info Base pass shader with static lighting: 64 instructions
+[2016.01.29-22.47.17:195][481]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 32 instructions
+[2016.01.29-22.47.17:195][481]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2016.01.29-22.47.17:195][481]MaterialEditorStats: Info Texture samplers: 3/16
+[2016.01.29-22.47.20:817][847]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2016.01.29-22.47.20:825][847]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2016.01.29-22.47.20:827][847]LogMaterial: 0.000069 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.01.29-22.47.20:973][859]MaterialEditorStats: Info Base pass shader without light map: 17 instructions
+[2016.01.29-22.47.20:973][859]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2016.01.29-22.47.20:973][859]MaterialEditorStats: Info Texture samplers: 0/16
+[2016.01.29-22.47.48:698][286]LogEditorViewport: Clicking on Actor (LMB): FlyingPawn_C (FlyingPawn)
+[2016.01.29-22.47.50:376][395]LogEditorViewport: Clicking on Actor (LMB): FlyingPawn_C (FlyingPawn)
+[2016.01.29-22.47.50:472][400]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (Plane mesh)
+[2016.01.29-22.47.56:093][757]LogLinker:Warning: Asset '../../../Engine/Content/ArtTools/RenderToTexture/Macros/RenderToTextureMacros.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2016.01.29-22.47.56:405][757]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0005 seconds. Added 107 classes and 0 folders.
+[2016.01.29-22.48.12:426][767]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-22.48.12:426][767]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.01.29-22.48.12:442][767]LogPlayLevel: [PlayLevel] Compiling FlyingPawn before play...
+[2016.01.29-22.48.12:524][767]LogPlayLevel: PlayLevel: Blueprint regeneration took 98 ms (1 blueprints)
+[2016.01.29-22.48.12:548][767]PIE: New page: PIE session: FlyingExampleMap (Jan 29, 2016, 8:48:12 AM)
+[2016.01.29-22.48.12:548][767]LogPlayLevel: Creating play world package: /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap
+[2016.01.29-22.48.12:582][767]LogPlayLevel: PIE: StaticDuplicateObject took: (0.033935s)
+[2016.01.29-22.48.12:583][767]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2016.01.29-22.48.12:583][767]LogPlayLevel: PIE: World Init took: (0.000712s)
+[2016.01.29-22.48.12:583][767]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.034882s)
+[2016.01.29-22.48.12:635][767]LogInit: XAudio2 using 'Speakers / Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.01.29-22.48.12:644][767]LogInit: FAudioDevice initialized.
+[2016.01.29-22.48.12:674][767]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.01.29-22.48.12:684][767]LogWorld: Bringing World /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 0) at 2016.01.29-15.48.12
+[2016.01.29-22.48.12:684][767]LogActor:Warning: GameSession /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap:PersistentLevel.GameSession_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.01.29-22.48.12:684][767]LogActor:Warning: GameNetworkManager /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap:PersistentLevel.GameNetworkManager_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.01.29-22.48.12:685][767]LogWorld: Bringing up level for play took: 0.009806
+[2016.01.29-22.48.12:685][767]PIE: Info Play in editor start time for /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap 0.546
+[2016.01.29-22.48.12:685][767]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-22.48.50:375][596]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-22.48.50:417][596]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-22.48.50:453][596]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020EF70C9940
+[2016.01.29-22.49.03:484][443]LogContentBrowser: Native class hierarchy updated for 'TextureEditor' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2016.01.29-22.51.50:608][671]AssetReimport: New page: Outstanding source content changes 8:51:50 AM
+[2016.01.29-22.51.53:629][907]AssetReimport:Warning: Warning Can't create a new asset at /Game/Images/fov - one already exists.
+[2016.01.29-22.53.15:456][377]AssetReimport: New page: Outstanding source content changes 8:53:15 AM
+[2016.01.29-22.53.17:132][382]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 C:\Users\Bryant Chandler\Documents\Unreal Projects\UavSimulator\Content\Images\fov2.png)
+[2016.01.29-22.53.17:144][382]LogTexture:Display: Building textures: fov2 (AutoDXT)
+[2016.01.29-22.53.34:819][463]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2016.01.29-22.53.34:822][463]LogMaterial: 0.000171 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.01.29-22.53.34:850][463]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-22.53.34:864][463]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-22.53.34:870][463]LogMaterial: 0.001288 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.01.29-22.53.35:426][463]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-22.53.35:431][463]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-22.53.35:436][463]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'MaterialExpressionTextureSample_0' or package '/Engine/Transient'.
+[2016.01.29-22.53.35:436][463]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'MaterialExpressionTextureSample_0' or package '/Engine/Transient'.
+[2016.01.29-22.53.35:441][463]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-22.53.35:442][463]LogMaterial:Warning: Failed to compile Material /Engine/Transient.fov_Mat for platform PCD3D_SM5, Default Material will be used in game.
+[2016.01.29-22.53.35:442][463]LogMaterial:Warning: 	(Node TextureSample) TextureSample> Missing input texture
+[2016.01.29-22.53.35:442][463]LogMaterial:Warning: FMaterialUniformExpressionTexture had invalid TextureIndex! (0 / 0)
+[2016.01.29-22.53.35:442][463]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'fov_Mat' or package '/Engine/Transient'.
+[2016.01.29-22.53.35:443][463]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2016.01.29-22.53.35:445][463]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'PreviewMaterial_0' or package '/Engine/Transient'.
+[2016.01.29-22.53.35:593][463]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020EEFC189A0
+[2016.01.29-22.53.35:594][463]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020ED0B9AC00
+[2016.01.29-22.53.40:703][854]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Images/fov" FILE="../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov.uasset" SILENT=true
+[2016.01.29-22.53.40:725][854]LogSavePackage: Save=20.286516ms
+[2016.01.29-22.53.40:725][854]LogSavePackage: Moving '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/fov22A7539A439326A876BEC297DDDC8C31.tmp' to '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov.uasset'
+[2016.01.29-22.53.40:727][854]LogSavePackage: Total save time: 22.561070ms
+[2016.01.29-22.53.40:727][854]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov.uasset
+[2016.01.29-22.54.12:700][822]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-22.54.14:100][933]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-22.54.14:141][933]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-22.54.14:145][933]LogMaterial: 0.000056 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.01.29-22.54.14:174][933]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2016.01.29-22.54.14:907][973]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 32 instructions
+[2016.01.29-22.54.14:907][973]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2016.01.29-22.54.14:907][973]MaterialEditorStats: Info Texture samplers: 1/16
+[2016.01.29-22.54.44:955][452]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-22.54.44:963][452]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-22.54.44:965][452]LogMaterial: 0.000052 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.01.29-22.54.45:360][483]MaterialEditorStats: Info Base pass shader without light map: 17 instructions
+[2016.01.29-22.54.45:360][483]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2016.01.29-22.54.45:360][483]MaterialEditorStats: Info Texture samplers: 0/16
+[2016.01.29-22.55.05:547][194]LogMaterialEditor: Saving and Compiling material fov_Mat
+[2016.01.29-22.55.05:824][194]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-22.55.05:827][194]LogMaterial: 0.000090 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.01.29-22.55.05:860][194]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-22.55.05:872][194]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-22.55.05:878][194]LogMaterial: 0.001104 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.01.29-22.55.07:360][194]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Images/fov_Mat" FILE="../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov_Mat.uasset" SILENT=true
+[2016.01.29-22.55.07:372][194]LogSavePackage: Save=10.539577ms
+[2016.01.29-22.55.07:372][194]LogSavePackage: Moving '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/fov_Mat96740D284F319DFF78A2C8BC54A0D89B.tmp' to '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov_Mat.uasset'
+[2016.01.29-22.55.07:376][194]LogSavePackage: Total save time: 13.990469ms
+[2016.01.29-22.55.07:376][194]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov_Mat.uasset
+[2016.01.29-22.55.07:381][194]MaterialEditorStats: Info Base pass shader without light map: 42 instructions
+[2016.01.29-22.55.07:381][194]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2016.01.29-22.55.07:381][194]MaterialEditorStats: Info Texture samplers: 3/16
+[2016.01.29-22.55.34:971][ 66]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-22.55.34:971][ 66]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.01.29-22.55.34:979][ 66]LogPlayLevel: [PlayLevel] Compiling FlyingPawn before play...
+[2016.01.29-22.55.35:040][ 66]LogPlayLevel: PlayLevel: Blueprint regeneration took 70 ms (1 blueprints)
+[2016.01.29-22.55.35:064][ 66]PIE: New page: PIE session: FlyingExampleMap (Jan 29, 2016, 8:55:35 AM)
+[2016.01.29-22.55.35:064][ 66]LogPlayLevel: Creating play world package: /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap
+[2016.01.29-22.55.35:099][ 66]LogPlayLevel: PIE: StaticDuplicateObject took: (0.034137s)
+[2016.01.29-22.55.35:099][ 66]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2016.01.29-22.55.35:099][ 66]LogPlayLevel: PIE: World Init took: (0.000741s)
+[2016.01.29-22.55.35:099][ 66]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.035165s)
+[2016.01.29-22.55.35:157][ 66]LogInit: XAudio2 using 'Speakers / Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.01.29-22.55.35:167][ 66]LogInit: FAudioDevice initialized.
+[2016.01.29-22.55.35:196][ 66]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.01.29-22.55.35:207][ 66]LogWorld: Bringing World /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 0) at 2016.01.29-15.55.35
+[2016.01.29-22.55.35:207][ 66]LogActor:Warning: GameSession /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap:PersistentLevel.GameSession_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.01.29-22.55.35:207][ 66]LogActor:Warning: GameNetworkManager /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap:PersistentLevel.GameNetworkManager_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.01.29-22.55.35:208][ 66]LogWorld: Bringing up level for play took: 0.010128
+[2016.01.29-22.55.35:208][ 66]PIE: Info Play in editor start time for /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap 1.069
+[2016.01.29-22.55.35:209][ 66]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-22.55.51:290][265]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-22.55.51:332][265]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-22.55.51:370][265]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020EF644F9C0
+[2016.01.29-22.56.57:320][493]LogSavePackage: Save=520.882935ms
+[2016.01.29-22.56.57:320][493]LogSavePackage: Moving '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/FlyingExampleMap_Auto10DC6908B4CFC89A1F266129CFD83AA72.tmp' to '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/Autosaves/Game/FlyingBP/Maps/FlyingExampleMap_Auto1.umap'
+[2016.01.29-22.56.57:322][493]LogSavePackage: Total save time: 537.190646ms
+[2016.01.29-22.56.57:322][493]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/Autosaves/Game/FlyingBP/Maps/FlyingExampleMap_Auto1.umap
+[2016.01.29-22.56.57:327][493]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FlyingBP/Maps/FlyingExampleMap' took 0.581
+[2016.01.29-22.56.57:327][493]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.581
+[2016.01.29-22.56.57:331][493]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/FlyingBP/Blueprints/FlyingPawn] ([1] browsable assets)...
+[2016.01.29-22.56.57:344][493]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn]
+[2016.01.29-22.56.57:344][493]OBJ SavePackage: Finished generating thumbnails for package [/Game/FlyingBP/Blueprints/FlyingPawn]
+[2016.01.29-22.56.57:426][493]LogSavePackage: Save=76.955711ms
+[2016.01.29-22.56.57:426][493]LogSavePackage: Moving '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/FlyingPawn_Auto1C5AD4F4B42644CBDB443859350A3B489.tmp' to '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/Autosaves/Game/FlyingBP/Blueprints/FlyingPawn_Auto1.uasset'
+[2016.01.29-22.56.57:428][493]LogSavePackage: Total save time: 83.087400ms
+[2016.01.29-22.56.57:428][493]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/Autosaves/Game/FlyingBP/Blueprints/FlyingPawn_Auto1.uasset
+[2016.01.29-22.56.57:435][493]LogSavePackage: Save=2.459646ms
+[2016.01.29-22.56.57:435][493]LogSavePackage: Moving '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/fov2_Auto1D221F5D348D3B5372F67BC9E7E663AD1.tmp' to '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/Autosaves/Game/Images/fov2_Auto1.uasset'
+[2016.01.29-22.56.57:436][493]LogSavePackage: Total save time: 4.019987ms
+[2016.01.29-22.56.57:436][493]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/Autosaves/Game/Images/fov2_Auto1.uasset
+[2016.01.29-22.56.57:436][493]LogFileHelpers: Auto-saving content packages took 0.109
+[2016.01.29-23.20.50:270][788]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.20.50:270][788]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.01.29-23.20.50:270][788]PIE: New page: PIE session: FlyingExampleMap (Jan 29, 2016, 9:20:50 AM)
+[2016.01.29-23.20.50:270][788]LogPlayLevel: Creating play world package: /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap
+[2016.01.29-23.20.50:310][788]LogPlayLevel: PIE: StaticDuplicateObject took: (0.039719s)
+[2016.01.29-23.20.50:311][788]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2016.01.29-23.20.50:311][788]LogPlayLevel: PIE: World Init took: (0.001662s)
+[2016.01.29-23.20.50:312][788]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.041640s)
+[2016.01.29-23.20.50:370][788]LogInit: XAudio2 using 'Speakers / Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.01.29-23.20.50:379][788]LogInit: FAudioDevice initialized.
+[2016.01.29-23.20.50:409][788]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.01.29-23.20.50:421][788]LogWorld: Bringing World /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 0) at 2016.01.29-16.20.50
+[2016.01.29-23.20.50:421][788]LogActor:Warning: GameSession /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap:PersistentLevel.GameSession_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.01.29-23.20.50:421][788]LogActor:Warning: GameNetworkManager /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap:PersistentLevel.GameNetworkManager_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.01.29-23.20.50:421][788]LogWorld: Bringing up level for play took: 0.010904
+[2016.01.29-23.20.50:422][788]PIE: Info Play in editor start time for /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap 0.283
+[2016.01.29-23.20.50:422][788]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.21.00:769][552]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.21.00:812][552]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.21.00:835][552]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020F13699D00
+[2016.01.29-23.21.27:266][291]LogSavePackage: Save=71.938469ms
+[2016.01.29-23.21.27:266][291]LogSavePackage: Moving '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/FlyingPawn22DE8BEB46B1148369C27696C249ADE7.tmp' to '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/FlyingBP/Blueprints/FlyingPawn.uasset'
+[2016.01.29-23.21.27:271][291]LogSavePackage: Total save time: 80.341708ms
+[2016.01.29-23.21.27:271][291]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/FlyingBP/Blueprints/FlyingPawn.uasset
+[2016.01.29-23.21.30:697][515]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.21.30:697][515]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.01.29-23.21.30:697][515]PIE: New page: PIE session: FlyingExampleMap (Jan 29, 2016, 9:21:30 AM)
+[2016.01.29-23.21.30:697][515]LogPlayLevel: Creating play world package: /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap
+[2016.01.29-23.21.30:733][515]LogPlayLevel: PIE: StaticDuplicateObject took: (0.036134s)
+[2016.01.29-23.21.30:734][515]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2016.01.29-23.21.30:734][515]LogPlayLevel: PIE: World Init took: (0.000742s)
+[2016.01.29-23.21.30:734][515]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.037110s)
+[2016.01.29-23.21.30:793][515]LogInit: XAudio2 using 'Speakers / Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.01.29-23.21.30:802][515]LogInit: FAudioDevice initialized.
+[2016.01.29-23.21.30:833][515]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.01.29-23.21.30:844][515]LogWorld: Bringing World /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 0) at 2016.01.29-16.21.30
+[2016.01.29-23.21.30:844][515]LogActor:Warning: GameSession /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap:PersistentLevel.GameSession_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.01.29-23.21.30:845][515]LogActor:Warning: GameNetworkManager /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap:PersistentLevel.GameNetworkManager_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.01.29-23.21.30:845][515]LogWorld: Bringing up level for play took: 0.011186
+[2016.01.29-23.21.30:846][515]PIE: Info Play in editor start time for /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap 0.707
+[2016.01.29-23.21.30:846][515]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.21.33:994][744]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.21.34:035][744]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.21.34:072][744]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020EF4C61760
+[2016.01.29-23.23.05:280][259]LogContentBrowser:Verbose: The majority of assets in the view are of type: Material
+[2016.01.29-23.23.50:250][125]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-23.23.50:264][125]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-23.23.50:268][125]LogMaterial: 0.000067 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.01.29-23.23.51:170][196]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 32 instructions
+[2016.01.29-23.23.51:170][196]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2016.01.29-23.23.51:170][196]MaterialEditorStats: Info Texture samplers: 1/16
+[2016.01.29-23.23.55:267][594]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-23.23.55:275][594]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-23.23.55:277][594]LogMaterial: 0.000059 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.01.29-23.23.55:403][602]MaterialEditorStats: Info Base pass shader without light map: 17 instructions
+[2016.01.29-23.23.55:403][602]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2016.01.29-23.23.55:403][602]MaterialEditorStats: Info Texture samplers: 0/16
+[2016.01.29-23.24.11:659][120]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-23.24.11:661][120]LogMaterial: 0.000130 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.01.29-23.24.11:689][120]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2016.01.29-23.24.11:797][129]MaterialEditorStats: Info Base pass shader without light map: 19 instructions
+[2016.01.29-23.24.11:797][129]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2016.01.29-23.24.11:797][129]MaterialEditorStats: Info Texture samplers: 1/16
+[2016.01.29-23.24.17:988][675]LogMaterialEditor: Saving and Compiling material fov_Mat
+[2016.01.29-23.24.18:257][675]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-23.24.18:260][675]LogMaterial: 0.000097 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.01.29-23.24.18:307][675]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-23.24.18:321][675]LogMaterial: Missing cached shader map for material fov_Mat, compiling. 
+[2016.01.29-23.24.18:325][675]LogMaterial: 0.001098 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.01.29-23.24.19:708][675]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Images/fov_Mat" FILE="../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov_Mat.uasset" SILENT=true
+[2016.01.29-23.24.19:725][675]LogSavePackage: Save=10.632422ms
+[2016.01.29-23.24.19:725][675]LogSavePackage: Moving '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/fov_Mat451A69024A84082B344810A716131D7D.tmp' to '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov_Mat.uasset'
+[2016.01.29-23.24.19:727][675]LogSavePackage: Total save time: 16.906831ms
+[2016.01.29-23.24.19:727][675]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov_Mat.uasset
+[2016.01.29-23.24.19:733][675]MaterialEditorStats: Info Base pass shader without light map: 44 instructions
+[2016.01.29-23.24.19:733][675]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2016.01.29-23.24.19:733][675]MaterialEditorStats: Info Texture samplers: 4/16
+[2016.01.29-23.24.23:721][ 17]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.24.23:721][ 17]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.01.29-23.24.23:721][ 17]PIE: New page: PIE session: FlyingExampleMap (Jan 29, 2016, 9:24:23 AM)
+[2016.01.29-23.24.23:721][ 17]LogPlayLevel: Creating play world package: /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap
+[2016.01.29-23.24.23:757][ 17]LogPlayLevel: PIE: StaticDuplicateObject took: (0.035481s)
+[2016.01.29-23.24.23:758][ 17]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2016.01.29-23.24.23:758][ 17]LogPlayLevel: PIE: World Init took: (0.001013s)
+[2016.01.29-23.24.23:758][ 17]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.036814s)
+[2016.01.29-23.24.23:813][ 17]LogInit: XAudio2 using 'Speakers / Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.01.29-23.24.23:822][ 17]LogInit: FAudioDevice initialized.
+[2016.01.29-23.24.23:866][ 17]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.01.29-23.24.23:900][ 17]LogWorld: Bringing World /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 0) at 2016.01.29-16.24.23
+[2016.01.29-23.24.23:900][ 17]LogActor:Warning: GameSession /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap:PersistentLevel.GameSession_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.01.29-23.24.23:900][ 17]LogActor:Warning: GameNetworkManager /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap:PersistentLevel.GameNetworkManager_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.01.29-23.24.23:901][ 17]LogWorld: Bringing up level for play took: 0.031542
+[2016.01.29-23.24.23:902][ 17]PIE: Info Play in editor start time for /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap -0.237
+[2016.01.29-23.24.23:902][ 17]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.24.47:385][606]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.24.47:426][606]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.24.47:471][606]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020F142AD120
+[2016.01.29-23.25.11:243][884]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.25.11:243][884]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.01.29-23.25.11:252][884]LogPlayLevel: [PlayLevel] Compiling FlyingPawn before play...
+[2016.01.29-23.25.11:333][884]LogPlayLevel: PlayLevel: Blueprint regeneration took 89 ms (1 blueprints)
+[2016.01.29-23.25.11:413][884]PIE: New page: PIE session: FlyingExampleMap (Jan 29, 2016, 9:25:11 AM)
+[2016.01.29-23.25.11:413][884]LogPlayLevel: Creating play world package: /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap
+[2016.01.29-23.25.11:444][884]LogPlayLevel: PIE: StaticDuplicateObject took: (0.030808s)
+[2016.01.29-23.25.11:445][884]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2016.01.29-23.25.11:445][884]LogPlayLevel: PIE: World Init took: (0.001117s)
+[2016.01.29-23.25.11:445][884]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.032197s)
+[2016.01.29-23.25.11:501][884]LogInit: XAudio2 using 'Speakers / Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.01.29-23.25.11:509][884]LogInit: FAudioDevice initialized.
+[2016.01.29-23.25.11:540][884]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.01.29-23.25.11:550][884]LogWorld: Bringing World /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 0) at 2016.01.29-16.25.11
+[2016.01.29-23.25.11:550][884]LogActor:Warning: GameSession /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap:PersistentLevel.GameSession_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.01.29-23.25.11:550][884]LogActor:Warning: GameNetworkManager /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap:PersistentLevel.GameNetworkManager_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.01.29-23.25.11:550][884]LogWorld: Bringing up level for play took: 0.009269
+[2016.01.29-23.25.11:551][884]PIE: Info Play in editor start time for /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap -0.588
+[2016.01.29-23.25.11:551][884]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.25.13:875][ 61]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.25.13:912][ 61]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.25.13:949][ 61]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020F184EF240
+[2016.01.29-23.25.15:247][135]LogSavePackage: Save=72.559242ms
+[2016.01.29-23.25.15:247][135]LogSavePackage: Moving '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/FlyingPawn9186A3104D446F98AC830E9132BA0624.tmp' to '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/FlyingBP/Blueprints/FlyingPawn.uasset'
+[2016.01.29-23.25.15:250][135]LogSavePackage: Total save time: 76.700013ms
+[2016.01.29-23.25.15:250][135]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/FlyingBP/Blueprints/FlyingPawn.uasset
+[2016.01.29-23.25.16:720][236]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.25.16:720][236]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.01.29-23.25.16:720][236]PIE: New page: PIE session: FlyingExampleMap (Jan 29, 2016, 9:25:16 AM)
+[2016.01.29-23.25.16:720][236]LogPlayLevel: Creating play world package: /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap
+[2016.01.29-23.25.16:754][236]LogPlayLevel: PIE: StaticDuplicateObject took: (0.034643s)
+[2016.01.29-23.25.16:755][236]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2016.01.29-23.25.16:755][236]LogPlayLevel: PIE: World Init took: (0.000973s)
+[2016.01.29-23.25.16:756][236]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.035925s)
+[2016.01.29-23.25.16:807][236]LogInit: XAudio2 using 'Speakers / Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.01.29-23.25.16:815][236]LogInit: FAudioDevice initialized.
+[2016.01.29-23.25.16:846][236]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.01.29-23.25.16:857][236]LogWorld: Bringing World /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 0) at 2016.01.29-16.25.16
+[2016.01.29-23.25.16:857][236]LogActor:Warning: GameSession /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap:PersistentLevel.GameSession_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.01.29-23.25.16:857][236]LogActor:Warning: GameNetworkManager /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap:PersistentLevel.GameNetworkManager_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.01.29-23.25.16:858][236]LogWorld: Bringing up level for play took: 0.010128
+[2016.01.29-23.25.16:858][236]PIE: Info Play in editor start time for /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap 0.719
+[2016.01.29-23.25.16:858][236]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.25.18:950][398]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.25.18:992][398]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.25.19:013][398]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020F142AD120
+[2016.01.29-23.27.04:802][535]LogSavePackage: Save=493.022186ms
+[2016.01.29-23.27.04:802][535]LogSavePackage: Moving '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/FlyingExampleMap_Auto26CED166F4CCC062A4D518EBB781CA530.tmp' to '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/Autosaves/Game/FlyingBP/Maps/FlyingExampleMap_Auto2.umap'
+[2016.01.29-23.27.04:804][535]LogSavePackage: Total save time: 506.753057ms
+[2016.01.29-23.27.04:804][535]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/Autosaves/Game/FlyingBP/Maps/FlyingExampleMap_Auto2.umap
+[2016.01.29-23.27.04:808][535]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FlyingBP/Maps/FlyingExampleMap' took 0.550
+[2016.01.29-23.27.04:808][535]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.550
+[2016.01.29-23.27.04:813][535]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/FlyingBP/Blueprints/FlyingPawn] ([1] browsable assets)...
+[2016.01.29-23.27.04:845][535]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn]
+[2016.01.29-23.27.04:845][535]OBJ SavePackage: Finished generating thumbnails for package [/Game/FlyingBP/Blueprints/FlyingPawn]
+[2016.01.29-23.27.04:921][535]LogSavePackage: Save=71.694183ms
+[2016.01.29-23.27.04:921][535]LogSavePackage: Moving '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/FlyingPawn_Auto24AEC92304353966601A059A8164C7EFF.tmp' to '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/Autosaves/Game/FlyingBP/Blueprints/FlyingPawn_Auto2.uasset'
+[2016.01.29-23.27.04:923][535]LogSavePackage: Total save time: 77.297948ms
+[2016.01.29-23.27.04:923][535]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/Autosaves/Game/FlyingBP/Blueprints/FlyingPawn_Auto2.uasset
+[2016.01.29-23.27.04:923][535]LogFileHelpers: Auto-saving content packages took 0.114
+[2016.01.29-23.32.39:918][801]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.32.39:919][801]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.01.29-23.32.39:928][801]LogPlayLevel: [PlayLevel] Compiling FlyingPawn before play...
+[2016.01.29-23.32.39:991][801]LogPlayLevel: PlayLevel: Blueprint regeneration took 72 ms (1 blueprints)
+[2016.01.29-23.32.40:014][801]PIE: New page: PIE session: FlyingExampleMap (Jan 29, 2016, 9:32:40 AM)
+[2016.01.29-23.32.40:014][801]LogPlayLevel: Creating play world package: /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap
+[2016.01.29-23.32.40:047][801]LogPlayLevel: PIE: StaticDuplicateObject took: (0.032972s)
+[2016.01.29-23.32.40:048][801]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2016.01.29-23.32.40:049][801]LogPlayLevel: PIE: World Init took: (0.001238s)
+[2016.01.29-23.32.40:049][801]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.034477s)
+[2016.01.29-23.32.40:098][801]LogInit: XAudio2 using 'Speakers / Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.01.29-23.32.40:107][801]LogInit: FAudioDevice initialized.
+[2016.01.29-23.32.40:155][801]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.01.29-23.32.40:178][801]LogWorld: Bringing World /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 0) at 2016.01.29-16.32.40
+[2016.01.29-23.32.40:178][801]LogActor:Warning: GameSession /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap:PersistentLevel.GameSession_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.01.29-23.32.40:179][801]LogActor:Warning: GameNetworkManager /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap:PersistentLevel.GameNetworkManager_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.01.29-23.32.40:179][801]LogWorld: Bringing up level for play took: 0.022631
+[2016.01.29-23.32.40:181][801]PIE: Info Play in editor start time for /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap 0.042
+[2016.01.29-23.32.40:181][801]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.32.45:415][190]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.32.45:452][190]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.32.45:489][190]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020F6AB627A0
+[2016.01.29-23.37.14:951][272]LogSavePackage: Save=499.279785ms
+[2016.01.29-23.37.14:951][272]LogSavePackage: Moving '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/FlyingExampleMap_Auto39A376DF643EE82DB816BDF8FD32464F9.tmp' to '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/Autosaves/Game/FlyingBP/Maps/FlyingExampleMap_Auto3.umap'
+[2016.01.29-23.37.14:953][272]LogSavePackage: Total save time: 514.667131ms
+[2016.01.29-23.37.14:953][272]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/Autosaves/Game/FlyingBP/Maps/FlyingExampleMap_Auto3.umap
+[2016.01.29-23.37.14:957][272]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FlyingBP/Maps/FlyingExampleMap' took 0.551
+[2016.01.29-23.37.14:957][272]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.551
+[2016.01.29-23.37.14:961][272]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/FlyingBP/Blueprints/FlyingPawn] ([1] browsable assets)...
+[2016.01.29-23.37.14:990][272]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn]
+[2016.01.29-23.37.14:990][272]OBJ SavePackage: Finished generating thumbnails for package [/Game/FlyingBP/Blueprints/FlyingPawn]
+[2016.01.29-23.37.15:075][272]LogSavePackage: Save=79.540657ms
+[2016.01.29-23.37.15:075][272]LogSavePackage: Moving '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/FlyingPawn_Auto315F1FD13439478D141CD989D096C4B1D.tmp' to '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/Autosaves/Game/FlyingBP/Blueprints/FlyingPawn_Auto3.uasset'
+[2016.01.29-23.37.15:076][272]LogSavePackage: Total save time: 85.196998ms
+[2016.01.29-23.37.15:076][272]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/Autosaves/Game/FlyingBP/Blueprints/FlyingPawn_Auto3.uasset
+[2016.01.29-23.37.15:077][272]LogFileHelpers: Auto-saving content packages took 0.119
+[2016.01.29-23.41.25:468][ 24]AssetReimport: New page: Outstanding source content changes 9:41:25 AM
+[2016.01.29-23.41.25:473][ 24]LogEditorFactories: Performing atomic reimport of [C:/Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov.png]
+[2016.01.29-23.41.25:474][ 24]LogFactory: FactoryCreateBinary: Texture2D with ReimportTextureFactory (0 0 C:/Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov.png)
+[2016.01.29-23.41.25:504][ 24]LogEditorFactories: -- imported successfully
+[2016.01.29-23.41.25:598][ 24]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Images/fov" FILE="../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov.uasset" SILENT=true
+[2016.01.29-23.41.25:627][ 24]LogSavePackage: Save=20.909090ms
+[2016.01.29-23.41.25:627][ 24]LogSavePackage: Moving '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/fov1649695F46C8570ACA21EBA87E24A15C.tmp' to '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov.uasset'
+[2016.01.29-23.41.25:633][ 24]LogSavePackage: Total save time: 33.190489ms
+[2016.01.29-23.41.25:633][ 24]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov.uasset
+[2016.01.29-23.41.28:805][ 34]AssetReimport: Info Reimported asset fov from C:/Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov.png.
+[2016.01.29-23.41.57:822][207]AssetReimport: New page: Outstanding source content changes 9:41:57 AM
+[2016.01.29-23.41.57:885][207]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Images/fov2" FILE="../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov2.uasset" SILENT=true
+[2016.01.29-23.41.57:892][207]LogSavePackage: Save=5.076737ms
+[2016.01.29-23.41.57:892][207]LogSavePackage: Moving '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/fov242DF148C4C0F6BD122059FAC179D00AD.tmp' to '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov2.uasset'
+[2016.01.29-23.41.57:895][207]LogSavePackage: Total save time: 8.242186ms
+[2016.01.29-23.41.58:003][207]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Images/fov_Mat" FILE="../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov_Mat.uasset" SILENT=true
+[2016.01.29-23.41.58:011][207]LogSavePackage: Save=3.716210ms
+[2016.01.29-23.41.58:011][207]LogSavePackage: Moving '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/fov_MatB3D1C45949C051DB2483B68509664182.tmp' to '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov_Mat.uasset'
+[2016.01.29-23.41.58:013][207]LogSavePackage: Total save time: 8.451015ms
+[2016.01.29-23.41.58:127][208]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Images/fov2" FILE="../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov2.uasset" SILENT=true
+[2016.01.29-23.41.58:150][208]LogSavePackage: Save=12.749833ms
+[2016.01.29-23.41.58:150][208]LogSavePackage: Moving '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/fov28D1A30654324E473F449178C2EAB30EE.tmp' to '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov2.uasset'
+[2016.01.29-23.41.58:156][208]LogSavePackage: Total save time: 26.303723ms
+[2016.01.29-23.41.58:156][208]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov2.uasset
+[2016.01.29-23.42.01:485][218]AssetReimport: Info Moving asset /Game/Images/fov to /Game/Images/fov2.
+[2016.01.29-23.42.18:493][269]AssetReimport: New page: Outstanding source content changes 9:42:18 AM
+[2016.01.29-23.42.18:535][269]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Images/fov" FILE="../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov.uasset" SILENT=true
+[2016.01.29-23.42.18:542][269]LogSavePackage: Save=5.249207ms
+[2016.01.29-23.42.18:542][269]LogSavePackage: Moving '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/fovDD67C34E43D0234733D46EB16D87FA37.tmp' to '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov.uasset'
+[2016.01.29-23.42.18:545][269]LogSavePackage: Total save time: 8.571204ms
+[2016.01.29-23.42.18:649][269]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Images/fov_Mat" FILE="../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov_Mat.uasset" SILENT=true
+[2016.01.29-23.42.18:655][269]LogSavePackage: Save=3.579797ms
+[2016.01.29-23.42.18:655][269]LogSavePackage: Moving '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/fov_MatBF78183F43044CEEC360FF8859FE6C30.tmp' to '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov_Mat.uasset'
+[2016.01.29-23.42.18:656][269]LogSavePackage: Total save time: 6.146107ms
+[2016.01.29-23.42.18:788][270]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Images/fov" FILE="../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov.uasset" SILENT=true
+[2016.01.29-23.42.18:794][270]LogSavePackage: Save=3.793731ms
+[2016.01.29-23.42.18:794][270]LogSavePackage: Moving '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/fov706AB205456027E2242B3D9EE666A912.tmp' to '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov.uasset'
+[2016.01.29-23.42.18:796][270]LogSavePackage: Total save time: 7.823933ms
+[2016.01.29-23.42.18:796][270]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/Images/fov.uasset
+[2016.01.29-23.42.21:800][440]AssetReimport: Info Moving asset /Game/Images/fov2 to /Game/Images/fov.
+[2016.01.29-23.42.28:487][883]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.42.28:487][883]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.01.29-23.42.28:487][883]PIE: New page: PIE session: FlyingExampleMap (Jan 29, 2016, 9:42:28 AM)
+[2016.01.29-23.42.28:487][883]LogPlayLevel: Creating play world package: /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap
+[2016.01.29-23.42.28:522][883]LogPlayLevel: PIE: StaticDuplicateObject took: (0.035217s)
+[2016.01.29-23.42.28:523][883]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2016.01.29-23.42.28:523][883]LogPlayLevel: PIE: World Init took: (0.000933s)
+[2016.01.29-23.42.28:524][883]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.036445s)
+[2016.01.29-23.42.28:580][883]LogInit: XAudio2 using 'Speakers / Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.01.29-23.42.28:589][883]LogInit: FAudioDevice initialized.
+[2016.01.29-23.42.28:633][883]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.01.29-23.42.28:658][883]LogWorld: Bringing World /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 0) at 2016.01.29-16.42.28
+[2016.01.29-23.42.28:658][883]LogActor:Warning: GameSession /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap:PersistentLevel.GameSession_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.01.29-23.42.28:659][883]LogActor:Warning: GameNetworkManager /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap:PersistentLevel.GameNetworkManager_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.01.29-23.42.28:659][883]LogWorld: Bringing up level for play took: 0.025054
+[2016.01.29-23.42.28:661][883]PIE: Info Play in editor start time for /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap 0.522
+[2016.01.29-23.42.28:661][883]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.42.38:452][630]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.42.38:495][630]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.42.38:533][630]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020F142CEF20
+[2016.01.29-23.42.54:458][692]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.42.54:458][692]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.01.29-23.42.54:468][692]LogPlayLevel: [PlayLevel] Compiling FlyingPawn before play...
+[2016.01.29-23.42.54:528][692]LogPlayLevel: PlayLevel: Blueprint regeneration took 69 ms (1 blueprints)
+[2016.01.29-23.42.54:550][692]PIE: New page: PIE session: FlyingExampleMap (Jan 29, 2016, 9:42:54 AM)
+[2016.01.29-23.42.54:550][692]LogPlayLevel: Creating play world package: /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap
+[2016.01.29-23.42.54:583][692]LogPlayLevel: PIE: StaticDuplicateObject took: (0.032487s)
+[2016.01.29-23.42.54:583][692]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2016.01.29-23.42.54:584][692]LogPlayLevel: PIE: World Init took: (0.000790s)
+[2016.01.29-23.42.54:584][692]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.033501s)
+[2016.01.29-23.42.54:635][692]LogInit: XAudio2 using 'Speakers / Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.01.29-23.42.54:644][692]LogInit: FAudioDevice initialized.
+[2016.01.29-23.42.54:677][692]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.01.29-23.42.54:698][692]LogWorld: Bringing World /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 0) at 2016.01.29-16.42.54
+[2016.01.29-23.42.54:698][692]LogActor:Warning: GameSession /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap:PersistentLevel.GameSession_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.01.29-23.42.54:698][692]LogActor:Warning: GameNetworkManager /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap:PersistentLevel.GameNetworkManager_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.01.29-23.42.54:699][692]LogWorld: Bringing up level for play took: 0.020107
+[2016.01.29-23.42.54:700][692]PIE: Info Play in editor start time for /Game/FlyingBP/Maps/UEDPIE_0_FlyingExampleMap 0.561
+[2016.01.29-23.42.54:701][692]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.44.08:333][456]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.44.08:371][456]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap' with GeneratedClass '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap_C' with ClassGeneratedBy '/Game/FlyingBP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FlyingExampleMap'
+[2016.01.29-23.44.08:408][456]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020E960D0B80
+[2016.01.29-23.44.09:921][543]LogSavePackage: Save=73.687500ms
+[2016.01.29-23.44.09:921][543]LogSavePackage: Moving '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/FlyingPawn01078E5F41A5313D61EE0291C897C446.tmp' to '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/FlyingBP/Blueprints/FlyingPawn.uasset'
+[2016.01.29-23.44.09:925][543]LogSavePackage: Total save time: 81.963941ms
+[2016.01.29-23.44.09:925][543]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/FlyingBP/Blueprints/FlyingPawn.uasset
+[2016.01.29-23.44.18:990][966]LogSavePackage: Save=490.059570ms
+[2016.01.29-23.44.18:990][966]LogSavePackage: Moving '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Saved/FlyingExampleMap70F071774EEE828C2564B8B1691503B7.tmp' to '../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/FlyingBP/Maps/FlyingExampleMap.umap'
+[2016.01.29-23.44.18:996][966]LogSavePackage: Total save time: 508.671258ms
+[2016.01.29-23.44.18:996][966]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bryant Chandler/Documents/Unreal Projects/UavSimulator/Content/FlyingBP/Maps/FlyingExampleMap.umap
+[2016.01.29-23.44.19:024][966]LogFileHelpers: Saving map 'FlyingExampleMap' took 0.599
+[2016.01.29-23.44.19:219][966]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.01.29-23.44.19:497][967]Cmd: QUIT_EDITOR
+[2016.01.29-23.44.20:264][967]LogExit: Preparing to exit.
+[2016.01.29-23.44.20:836][967]LogExit: Editor shut down
+[2016.01.29-23.44.20:838][967]LogExit: Transaction tracking system shut down
+[2016.01.29-23.44.20:847][967]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020E94D6BD80
+[2016.01.29-23.44.20:848][967]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020EB1F9F880
+[2016.01.29-23.44.20:850][967]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020EAD699DA0
+[2016.01.29-23.44.20:850][967]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020E9390B100
+[2016.01.29-23.44.20:850][967]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020EF6ACE520
+[2016.01.29-23.44.20:853][967]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020EFA11B6A0
+[2016.01.29-23.44.20:854][967]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020E9603AE80
+[2016.01.29-23.44.21:129][967]LogExit: Object subsystem successfully closed.
+[2016.01.29-23.44.21:170][967]LogD3D11RHI: Shutdown
+[2016.01.29-23.44.21:170][967]LogD3D11RHI: CleanupD3DDevice
+[2016.01.29-23.44.21:274][967]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.01.29-23.44.21:317][967]LogModuleManager: Shutting down and abandoning module TextureEditor (202)
+[2016.01.29-23.44.21:317][967]LogModuleManager: Shutting down and abandoning module BlueprintGraph (201)
+[2016.01.29-23.44.21:317][967]LogModuleManager: Shutting down and abandoning module CookingStats (200)
+[2016.01.29-23.44.21:317][967]LogModuleManager: Shutting down and abandoning module MaterialEditor (199)
+[2016.01.29-23.44.21:317][967]LogModuleManager: Shutting down and abandoning module CrashTracker (198)
+[2016.01.29-23.44.21:317][967]LogModuleManager: Shutting down and abandoning module SceneOutliner (197)
+[2016.01.29-23.44.21:317][967]LogModuleManager: Shutting down and abandoning module SuperSearch (196)
+[2016.01.29-23.44.21:317][967]LogModuleManager: Shutting down and abandoning module WidgetCarousel (195)
+[2016.01.29-23.44.21:317][967]LogModuleManager: Shutting down and abandoning module AddContentDialog (194)
+[2016.01.29-23.44.21:322][967]LogModuleManager: Shutting down and abandoning module EditorWidgets (193)
+[2016.01.29-23.44.21:322][967]LogModuleManager: Shutting down and abandoning module CollectionManager (192)
+[2016.01.29-23.44.21:323][967]LogModuleManager: Shutting down and abandoning module StatsViewer (191)
+[2016.01.29-23.44.21:324][967]LogModuleManager: Shutting down and abandoning module FoliageEdit (190)
+[2016.01.29-23.44.21:324][967]LogModuleManager: Shutting down and abandoning module LandscapeEditor (189)
+[2016.01.29-23.44.21:326][967]LogModuleManager: Shutting down and abandoning module ActorPickerMode (188)
+[2016.01.29-23.44.21:326][967]LogModuleManager: Shutting down and abandoning module GeometryMode (187)
+[2016.01.29-23.44.21:326][967]LogModuleManager: Shutting down and abandoning module TextureAlignMode (186)
+[2016.01.29-23.44.21:326][967]LogModuleManager: Shutting down and abandoning module BspMode (185)
+[2016.01.29-23.44.21:326][967]LogModuleManager: Shutting down and abandoning module PlacementMode (184)
+[2016.01.29-23.44.21:326][967]LogModuleManager: Shutting down and abandoning module AutomationWorker (183)
+[2016.01.29-23.44.21:326][967]LogModuleManager: Shutting down and abandoning module CharacterAI (182)
+[2016.01.29-23.44.21:326][967]LogModuleManager: Shutting down and abandoning module SmartSnapping (181)
+[2016.01.29-23.44.21:326][967]LogModuleManager: Shutting down and abandoning module ViewportSnapping (180)
+[2016.01.29-23.44.21:326][967]LogModuleManager: Shutting down and abandoning module LogVisualizer (179)
+[2016.01.29-23.44.21:328][967]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (178)
+[2016.01.29-23.44.21:329][967]LogModuleManager: Shutting down and abandoning module IntroTutorials (177)
+[2016.01.29-23.44.21:330][967]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (176)
+[2016.01.29-23.44.21:330][967]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (175)
+[2016.01.29-23.44.21:331][967]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (174)
+[2016.01.29-23.44.21:331][967]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (173)
+[2016.01.29-23.44.21:739][967]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (172)
+[2016.01.29-23.44.21:739][967]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (171)
+[2016.01.29-23.44.21:739][967]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (170)
+[2016.01.29-23.44.21:739][967]LogModuleManager: Shutting down and abandoning module MergeActors (169)
+[2016.01.29-23.44.21:741][967]LogModuleManager: Shutting down and abandoning module SizeMap (168)
+[2016.01.29-23.44.21:741][967]LogModuleManager: Shutting down and abandoning module TreeMap (167)
+[2016.01.29-23.44.21:741][967]LogModuleManager: Shutting down and abandoning module ReferenceViewer (166)
+[2016.01.29-23.44.21:741][967]LogModuleManager: Shutting down and abandoning module LocalizationService (165)
+[2016.01.29-23.44.21:743][967]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (164)
+[2016.01.29-23.44.21:744][967]LogModuleManager: Shutting down and abandoning module HardwareTargeting (163)
+[2016.01.29-23.44.21:744][967]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (162)
+[2016.01.29-23.44.21:745][967]LogModuleManager: Shutting down and abandoning module UndoHistory (161)
+[2016.01.29-23.44.21:746][967]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (160)
+[2016.01.29-23.44.21:747][967]LogModuleManager: Shutting down and abandoning module UserFeedback (159)
+[2016.01.29-23.44.21:747][967]LogModuleManager: Shutting down and abandoning module XmlParser (158)
+[2016.01.29-23.44.21:747][967]LogModuleManager: Shutting down and abandoning module Blutility (157)
+[2016.01.29-23.44.21:747][967]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (156)
+[2016.01.29-23.44.21:748][967]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (155)
+[2016.01.29-23.44.21:748][967]LogModuleManager: Shutting down and abandoning module InputBindingEditor (154)
+[2016.01.29-23.44.21:750][967]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (153)
+[2016.01.29-23.44.21:751][967]LogModuleManager: Shutting down and abandoning module SettingsEditor (152)
+[2016.01.29-23.44.21:752][967]LogModuleManager: Shutting down and abandoning module ProjectLauncher (151)
+[2016.01.29-23.44.21:752][967]LogModuleManager: Shutting down and abandoning module SessionFrontend (150)
+[2016.01.29-23.44.21:754][967]LogModuleManager: Shutting down and abandoning module ProfilerClient (149)
+[2016.01.29-23.44.21:755][967]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (148)
+[2016.01.29-23.44.21:755][967]LogModuleManager: Shutting down and abandoning module DeviceManager (147)
+[2016.01.29-23.44.21:757][967]LogModuleManager: Shutting down and abandoning module AutomationController (146)
+[2016.01.29-23.44.21:758][967]LogModuleManager: Shutting down and abandoning module AutomationWindow (145)
+[2016.01.29-23.44.21:758][967]LogModuleManager: Shutting down and abandoning module Layers (144)
+[2016.01.29-23.44.21:762][967]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (143)
+[2016.01.29-23.44.21:762][967]LogModuleManager: Shutting down and abandoning module DetailCustomizations (142)
+[2016.01.29-23.44.21:762][967]LogModuleManager: Shutting down and abandoning module PackagesDialog (141)
+[2016.01.29-23.44.21:762][967]LogModuleManager: Shutting down and abandoning module Persona (140)
+[2016.01.29-23.44.21:766][967]LogModuleManager: Shutting down and abandoning module Kismet (139)
+[2016.01.29-23.44.21:767][967]LogModuleManager: Shutting down and abandoning module GraphEditor (138)
+[2016.01.29-23.44.21:767][967]LogModuleManager: Shutting down and abandoning module ClassViewer (137)
+[2016.01.29-23.44.21:768][967]LogModuleManager: Shutting down and abandoning module Toolbox (136)
+[2016.01.29-23.44.21:768][967]LogModuleManager: Shutting down and abandoning module ModuleUI (135)
+[2016.01.29-23.44.21:769][967]LogModuleManager: Shutting down and abandoning module MovieSceneTools (134)
+[2016.01.29-23.44.21:770][967]LogModuleManager: Shutting down and abandoning module OutputLog (133)
+[2016.01.29-23.44.21:770][967]LogModuleManager: Shutting down and abandoning module GammaUI (132)
+[2016.01.29-23.44.21:770][967]LogModuleManager: Shutting down and abandoning module Documentation (131)
+[2016.01.29-23.44.21:771][967]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (130)
+[2016.01.29-23.44.21:771][967]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (129)
+[2016.01.29-23.44.21:771][967]LogModuleManager: Shutting down and abandoning module AnalyticsET (128)
+[2016.01.29-23.44.21:772][967]LogModuleManager: Shutting down and abandoning module Analytics (127)
+[2016.01.29-23.44.21:772][967]LogModuleManager: Shutting down and abandoning module AITestSuite (126)
+[2016.01.29-23.44.21:772][967]LogModuleManager: Shutting down and abandoning module GameplayDebugger (125)
+[2016.01.29-23.44.21:773][967]LogModuleManager: Shutting down and abandoning module AIModule (124)
+[2016.01.29-23.44.21:773][967]LogModuleManager: Shutting down and abandoning module ProfilerService (123)
+[2016.01.29-23.44.21:816][967]LogModuleManager: Shutting down and abandoning module TaskGraph (122)
+[2016.01.29-23.44.21:818][967]LogModuleManager: Shutting down and abandoning module SlateRemote (121)
+[2016.01.29-23.44.21:818][967]LogModuleManager: Shutting down and abandoning module SteamVRController (120)
+[2016.01.29-23.44.21:818][967]LogModuleManager: Shutting down and abandoning module SteamVR (119)
+[2016.01.29-23.44.21:818][967]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (118)
+[2016.01.29-23.44.21:818][967]LogModuleManager: Shutting down and abandoning module OculusLibrary (117)
+[2016.01.29-23.44.21:818][967]LogModuleManager: Shutting down and abandoning module OculusInput (116)
+[2016.01.29-23.44.21:818][967]LogModuleManager: Shutting down and abandoning module LeapMotionController (115)
+[2016.01.29-23.44.21:865][967]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (114)
+[2016.01.29-23.44.21:865][967]LogModuleManager: Shutting down and abandoning module CableComponent (113)
+[2016.01.29-23.44.21:866][967]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (112)
+[2016.01.29-23.44.21:866][967]LogModuleManager: Shutting down and abandoning module MessagingDebugger (111)
+[2016.01.29-23.44.21:868][967]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (110)
+[2016.01.29-23.44.21:869][967]LogModuleManager: Shutting down and abandoning module HTML5Networking (109)
+[2016.01.29-23.44.21:869][967]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (108)
+[2016.01.29-23.44.21:869][967]LogModuleManager: Shutting down and abandoning module PluginBrowser (107)
+[2016.01.29-23.44.21:870][967]LogModuleManager: Shutting down and abandoning module EpicSurvey (106)
+[2016.01.29-23.44.21:871][967]LogModuleManager: Shutting down and abandoning module DesktopPlatform (105)
+[2016.01.29-23.44.21:871][967]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (104)
+[2016.01.29-23.44.21:871][967]LogModuleManager: Shutting down and abandoning module UObjectPlugin (103)
+[2016.01.29-23.44.21:871][967]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (102)
+[2016.01.29-23.44.21:872][967]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (101)
+[2016.01.29-23.44.21:874][967]LogModuleManager: Shutting down and abandoning module SourceControl (100)
+[2016.01.29-23.44.21:875][967]LogModuleManager: Shutting down and abandoning module GitSourceControl (99)
+[2016.01.29-23.44.21:876][967]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (98)
+[2016.01.29-23.44.21:876][967]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (97)
+[2016.01.29-23.44.21:876][967]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (96)
+[2016.01.29-23.44.21:876][967]LogModuleManager: Shutting down and abandoning module MeshPaint (95)
+[2016.01.29-23.44.21:876][967]LogModuleManager: Shutting down and abandoning module SlateReflector (94)
+[2016.01.29-23.44.21:877][967]LogModuleManager: Shutting down and abandoning module HotReload (93)
+[2016.01.29-23.44.21:877][967]LogModuleManager: Shutting down and abandoning module MainFrame (92)
+[2016.01.29-23.44.21:877][967]LogModuleManager: Shutting down and abandoning module LevelEditor (91)
+[2016.01.29-23.44.21:880][967]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (90)
+[2016.01.29-23.44.21:883][967]LogModuleManager: Shutting down and abandoning module AssetRegistry (89)
+[2016.01.29-23.44.22:001][967]LogModuleManager: Shutting down and abandoning module ContentBrowser (88)
+[2016.01.29-23.44.22:003][967]LogModuleManager: Shutting down and abandoning module Paper2DEditor (87)
+[2016.01.29-23.44.22:012][967]LogModuleManager: Shutting down and abandoning module UdpMessaging (86)
+[2016.01.29-23.44.22:113][967]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (85)
+[2016.01.29-23.44.22:113][967]LogModuleManager: Shutting down and abandoning module Paper2D (84)
+[2016.01.29-23.44.22:113][967]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (83)
+[2016.01.29-23.44.22:114][967]LogModuleManager: Shutting down and abandoning module Media (82)
+[2016.01.29-23.44.22:114][967]LogModuleManager: Shutting down and abandoning module WmfMedia (81)
+[2016.01.29-23.44.22:114][967]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (80)
+[2016.01.29-23.44.22:114][967]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (79)
+[2016.01.29-23.44.22:114][967]LogModuleManager: Shutting down and abandoning module PropertyEditor (78)
+[2016.01.29-23.44.22:114][967]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (77)
+[2016.01.29-23.44.22:116][967]LogModuleManager: Shutting down and abandoning module FunctionalTesting (76)
+[2016.01.29-23.44.22:116][967]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (75)
+[2016.01.29-23.44.22:117][967]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (74)
+[2016.01.29-23.44.22:117][967]LogModuleManager: Shutting down and abandoning module MessageLog (73)
+[2016.01.29-23.44.22:117][967]LogModuleManager: Shutting down and abandoning module Sequencer (72)
+[2016.01.29-23.44.22:118][967]LogModuleManager: Shutting down and abandoning module AssetTools (71)
+[2016.01.29-23.44.22:120][967]LogModuleManager: Shutting down and abandoning module UMGEditor (70)
+[2016.01.29-23.44.22:121][967]LogModuleManager: Shutting down and abandoning module UMG (69)
+[2016.01.29-23.44.22:122][967]LogModuleManager: Shutting down and abandoning module Slate (68)
+[2016.01.29-23.44.22:122][967]LogModuleManager: Shutting down and abandoning module EditorStyle (67)
+[2016.01.29-23.44.22:125][967]LogModuleManager: Shutting down and abandoning module SessionServices (66)
+[2016.01.29-23.44.22:125][967]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (65)
+[2016.01.29-23.44.22:125][967]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (64)
+[2016.01.29-23.44.22:125][967]LogModuleManager: Shutting down and abandoning module XAudio2 (63)
+[2016.01.29-23.44.22:125][967]LogModuleManager: Shutting down and abandoning module Networking (61)
+[2016.01.29-23.44.22:125][967]LogModuleManager: Shutting down and abandoning module Core (60)
+[2016.01.29-23.44.22:125][967]LogModuleManager: Shutting down and abandoning module KismetCompiler (59)
+[2016.01.29-23.44.22:125][967]LogModuleManager: Shutting down and abandoning module PhysXFormats (58)
+[2016.01.29-23.44.22:125][967]LogModuleManager: Shutting down and abandoning module MeshUtilities (57)
+[2016.01.29-23.44.22:126][967]LogModuleManager: Shutting down and abandoning module DerivedDataCache (56)
+[2016.01.29-23.44.22:160][967]LogDerivedDataCache: Shutdown
+[2016.01.29-23.44.22:160][967]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (55)
+[2016.01.29-23.44.22:161][967]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (54)
+[2016.01.29-23.44.22:161][967]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (53)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (52)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (51)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (50)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (49)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module ImageWrapper (48)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (47)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (46)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (45)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (44)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (43)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (42)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (41)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (40)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.01.29-23.44.22:162][967]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.01.29-23.44.22:163][967]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.01.29-23.44.22:163][967]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.01.29-23.44.22:163][967]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.01.29-23.44.22:163][967]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.01.29-23.44.23:164][967]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.01.29-23.44.23:166][967]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.01.29-23.44.23:168][967]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.01.29-23.44.23:168][967]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.01.29-23.44.23:168][967]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.01.29-23.44.23:168][967]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.01.29-23.44.23:168][967]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.01.29-23.44.23:209][967]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.01.29-23.44.23:210][967]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.01.29-23.44.23:210][967]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.01.29-23.44.23:210][967]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.01.29-23.44.23:210][967]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.01.29-23.44.23:210][967]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.01.29-23.44.23:210][967]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.01.29-23.44.23:211][967]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.01.29-23.44.23:211][967]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.01.29-23.44.23:212][967]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.01.29-23.44.23:215][967]LogExit: Exiting.
+[2016.01.29-23.44.23:244][967]Log file closed, 01/29/16 16:44:23
